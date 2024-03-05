@@ -10,7 +10,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Dataset
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-all_df = pd.read_csv("/Users/wibisono/Downloads/Bangkit/projectDicoding/dashboard/allData.csv")
+all_df = pd.read_csv("/Users/wibisono/Downloads/Bangkit/projectDicoding/Proyek Analisis Data/dashboard/allData.csv")
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
 all_df['order_approved_at'] = pd.to_datetime(all_df['order_approved_at'])
@@ -20,7 +20,7 @@ max_date = all_df["order_approved_at"].max()
  
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("/Users/wibisono/Downloads/Bangkit/projectDicoding/dashboard/logo.png")
+    st.image("/Users/wibisono/Downloads/Bangkit/projectDicoding/Proyek Analisis Data/dashboard/logo.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
