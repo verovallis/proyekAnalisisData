@@ -33,7 +33,7 @@ Proyek ini bertujuan untuk menganalisis data pada E-Commerce Public Dataset.
 
    ```shell
    cd dicoding/dashboard/
-   streamlit run main.py
+   streamlit run dashboard/py
    ```
 
-   Atau bisa dengan kunjungi website ini 
+   Atau bisa dengan kunjungi website : ecommerceana.streamlit.app
